@@ -14,7 +14,6 @@ import random
 
 # size_n = int(input("Please enter the length of the array: "))
 # arr = [random.randint(1, 15) for i in range(size_n)]
-# arr[-1] = size_n
 # print(arr)
 #
 # x = int(input("Please enter the number N: "))
