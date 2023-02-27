@@ -13,7 +13,6 @@ import random
 
 # size = int(input("Please enter the length of the array: "))
 # num_array = [random.randint(1, 15) for i in range(size)]
-# num_array[-1] = size
 # print(num_array)
 #
 # count = 0
