@@ -12,14 +12,14 @@ import random
 # 6
 # -> 5
 
-# size_n = int(input("Please enter the length of the array: "))
-# arr = [random.randint(1, 15) for i in range(size_n)]
-# print(arr)
-#
-# x = int(input("Please enter the number N: "))
-# number = 0
-#
-# for j in range(1, len(arr)):
-#     if arr[j - 1] < arr[j] <= x:
-#         number = arr[j]
-# print(number)
+size = int(input("Please enter the length of the array: "))
+num_array = [random.randint(1, 15) for i in range(size)]
+print(num_array)
+
+count = 0
+k = int(input("Please enter the number N: "))
+
+for j in range(len(num_array)):
+    if num_array[j] == k:
+        count += 1
+print(count)
