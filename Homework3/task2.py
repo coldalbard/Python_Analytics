@@ -12,14 +12,33 @@ import random
 # 6
 # -> 5
 
-size = int(input("Please enter the length of the array: "))
-num_array = [random.randint(1, 15) for i in range(size)]
-print(num_array)
+# 1 решение
 
-count = 0
-k = int(input("Please enter the number N: "))
+size_n = int(input("Please enter the length of the array: "))
+arr = [random.randint(1, 15) for i in range(size_n)]
+print(arr)
 
-for j in range(len(num_array)):
-    if num_array[j] == k:
-        count += 1
-print(count)
+x = int(input("Please enter the number N: "))
+number = arr[0]
+difference = abs(arr[0] - x)
+
+for i in range(1, len(arr)):
+    diff = abs(arr[i] - x)
+    if diff < difference:
+        difference = diff
+        number = arr[i]
+print(number)
+
+
+# 2 решение
+
+size_array = int(input("Please enter the length of the array: "))
+array = [random.randint(1, 15) for i in range(size_array)]
+new_array = []
+print(array)
+N = int(input("Please enter the number N: "))
+
+for i in range(N):
+    i = abs(array[i] - N)
+    new_array.append(i)
+print(f'{array[new_array.index(min(new_array))]}')

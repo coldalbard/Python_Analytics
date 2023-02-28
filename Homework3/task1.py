@@ -11,14 +11,14 @@ import random
 # 3
 # -> 1
 
-# size = int(input("Please enter the length of the array: "))
-# num_array = [random.randint(1, 15) for i in range(size)]
-# print(num_array)
-#
-# count = 0
-# k = int(input("Please enter the number N: "))
-#
-# for j in range(len(num_array)):
-#     if num_array[j] == k:
-#         count += 1
-# print(count)
+size = int(input("Please enter the length of the array: "))
+num_array = [random.randint(1, 15) for i in range(size)]
+print(num_array)
+
+count = 0
+k = int(input("Please enter the number N: "))
+
+for j in range(len(num_array)):
+    if num_array[j] == k:
+        count += 1
+print(count)
