@@ -7,9 +7,10 @@
 
 a = int(input("Please enter the number A: "))
 b = int(input("Please enter the number B: "))
-def Degree(a, b):
-    if b > 1:
-        b -= 1
-        return a * Degree(a, b)
+def degree(a, b):
+    if b == 0:
+        return 1
+    elif b > 1:
+        return a * degree(a, b - 1)
     return a
-print(f'{a}^{b} = {Degree(a, b)}')
+print(f'{a}^{b} = {degree(a, b)}')

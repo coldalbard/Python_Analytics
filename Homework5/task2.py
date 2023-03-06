@@ -8,7 +8,7 @@
 a = int(input("Please enter the number A: "))
 b = int(input("Please enter the number B: "))
 def SumNumbers(a, b):
-    if 0 == b:
+    if b == 0:
         return a
     return SumNumbers(a + 1, b - 1)
 print(f'{a} + {b} = {SumNumbers(a, b)}')
