@@ -5,12 +5,12 @@
 # *Пример:*
 # 2 2
 #     4
-# a = int(input("Please enter the number A: "))
-# b = int(input("Please enter the number B: "))
-# def SumNumbers(a, b):
-#     if 0 == b:
-#         return a
-#     return SumNumbers(a + 1, b - 1)
-# print(f'{a} + {b} = {SumNumbers(a, b)}')
+a = int(input("Please enter the number A: "))
+b = int(input("Please enter the number B: "))
+def SumNumbers(a, b):
+    if 0 == b:
+        return a
+    return SumNumbers(a + 1, b - 1)
+print(f'{a} + {b} = {SumNumbers(a, b)}')
 
 
