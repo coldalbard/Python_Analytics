@@ -6,6 +6,7 @@
 # Каждое число вводится с новой строки.
 # Ввод: 7 2 5
 # Вывод: 7 9 11 13 15
+
 a = int(input("Enter the first element of the array: "))
 d = int(input("Enter the difference of the array elements: "))
 n = int(input("Enter the number of items: "))
